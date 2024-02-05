@@ -12,7 +12,7 @@
     
     </head>
 <body>
-
+    <!--      NAVIGATION       -->
     <div id="header">
 
         <div class="container">
@@ -30,8 +30,77 @@
                 </li>
             </ul>
             </nav>
+
+            <div class="header-text">
+                <p>Computer Science Student</p>
+                <h1>Hello, my name is <span>Honza</span></h1>
+            </div>
+
+
         </div>
         
+    </div>
+<!--      ABOUT       -->
+    <div id="about">
+        <div class="container">
+                <div class="aboutcolumn">
+                    <h1 class="sub-title">About me</h1>
+                    <p class="about-text">
+                        In this video we will create a personal portfolio website design
+                         step by step using HTML CSS and JavaScript. You can use this website
+                          to make your online resume or CV. In this website design we will add
+                           name, designation of the user. Then we will display the image, skills,
+                            work experience and education details. We will also add the list of services
+                             and work portfolio on this website. In the footer of this website we will add
+                              contact info and contact form. Your can receive the contact form data on your
+                               google sheets.
+                    This website design will be completely responsive for all screen devices like mobile 
+                    phones. We will this complete website design step by step using HTML CSS and JavaScript.
+                </p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>SKILL</span><br>popis první schopnosti</li>
+                            <li><span>2SKILL</span><br>popis druhé schopnosti</li>
+                            <li><span>3SKILL</span><br>popis třetí schopnosti</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Experience</span><br>Documentation Manager @ Woodler <br> 2023 - Present <br></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Education1</span><br>Computer Science @ Palacký University <br>     Bc. 2023 - 2026 <br></li>
+                            <li><span>Education2</span><br>Gympl <br> dávno dávno <br></li>
+                        </ul>
+                    </div>
+
+                    
+                
+
+                    <div>
+
+
+                    </div>
+                
+                
+                </div>
+
+
+
+
+        </div>
+
     </div>
 
 <h1>
@@ -40,11 +109,6 @@ Jan Jaroněk <br>
 <h3>
 
    
-Computer Science @ Palacký University <br>
-       Bc. 2023 - 2026 <br>
-
-Documentation Manager @ Woodler <br>
-       2023 - Present <br>
     
 </h3>
 
@@ -54,13 +118,23 @@ Documentation Manager @ Woodler <br>
 <i> Copyright (c) 2024 Jan Jaronek </i>
 
 
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
 
+    function opentab(tabname){
+        for(tablink of tablinks)
+            tablink.classList.remove("active-link")
+    
 
+    for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
 
-
-
-    <!-- jquery cdn link  -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
