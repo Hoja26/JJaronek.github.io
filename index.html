@@ -31,7 +31,7 @@
             </nav>
 
             <div class="header-text">
-                <p>Computer Science Student</p>
+                <p>Jan Jaroněk</p>
                 <h1>Hello, my name is <span>Honza</span></h1>
             </div>
 
@@ -44,47 +44,42 @@
         <div class="container">
                 <div class="aboutcolumn">
                             <h1 class="sub-title">About me</h1>
-                            <p class="about-text">
-                                In this video we will create a personal portfolio website design
-                                step by step using HTML CSS and JavaScript. You can use this website
-                                to make your online resume or CV. In this website design we will add
-                                name, designation of the user. Then we will display the image, skills,
-                                    work experience and education details. We will also add the list of services
-                                    and work portfolio on this website. In the footer of this website we will add
-                                    contact info and contact form. Your can receive the contact form data on your
-                                    google sheets.
-                            This website design will be completely responsive for all screen devices like mobile 
-                            phones. We will this complete website design step by step using HTML CSS and JavaScript.
-                        </p>
+                            <p class="about-text">Hello! I'm a dedicated intern with four months of hands-on experience in TSQL, JSON, and Confluence. In my role as a Documentation Manager at Woodler in Mikulčice, I've successfully led technical documentation teams to create detailed and accurate documents. My expertise spans Software and Technical Documentation, along with Software Development. I'm well-versed in tools like Microsoft SQL Server, Jira, Git, and Confluence.</p>
+
+<p class="about-text">Currently pursuing a Baccalauréat in computer science at Univerzita Palackého v Olomouc (expected completion in 2026), I blend theoretical knowledge with practical experience. Driven by a passion for technology, I aim to make meaningful contributions to innovative projects.</p>
+
 
                             
                             <div class="tab-titles">
-                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
                                 <p class="tab-links" onclick="opentab('education')">Education</p>
+                                <p class="tab-links " onclick="opentab('skills')">Relevant Coursework</p>
                             </div>
 
 
-                            <div class="tab-contents active-tab" id="skills">
-                                <ul>
-                                    <li><span>SKILL</span><br>popis první schopnosti</li>
-                                    <li><span>2SKILL</span><br>popis druhé schopnosti</li>
-                                    <li><span>3SKILL</span><br>popis třetí schopnosti</li>
-                                </ul>
+                            
                             </div>
 
-                            <div class="tab-contents" id="experience">
+                            <div class="tab-contents active-tab" id="experience">
                                 <ul>
-                                    <li><span>Experience</span><br>Documentation Manager @ Woodler <br> 2023 - Present <br></li>
+                                    <li><span>Experience</span><br>Documentation Manager @ Woodler <br> 2023 - Present <br> Developed a complex
+                                    documetation tree in Confluence and shared it across the company with different levels of access.</li>
                                 </ul>
                             </div>
 
                             <div class="tab-contents" id="education">
                                 <ul>
-                                    <li><span>Education1</span><br>Computer Science @ Palacký University <br>     Bc. 2023 - 2026 <br></li>
-                                    <li><span>Education2</span><br>Gympl <br> dávno dávno <br></li>
+                                    <li><span>College</span><br>Computer Science @ Palacký University <br>     Bc. 2023 - 2026 <br></li>
+                                    <li><span>High school</span><br>Gymnázium Hodonín <br> 2015-2023 <br></li>
                                 </ul>
-                            </div>         
+                            </div>       
+                            
+                            <div class="tab-contents " id="skills">
+                                <ul>
+                                    <li><span>Algorithms</span><br>Studied, programmed and evaluated a vast array of algorithms. </li>
+                                    <li><span>Programming in C</span><br>Developed various projects in C Programming language.</li>
+                                    <li><span>Programming paradigms</span><br>Programmed functionally, theoretically and in Common Lisp.</li>
+                                </ul>
                             
                 </div>
         </div>
@@ -96,20 +91,24 @@
         <h1 class="sub-title">My certificates</h1>
         <div class="services-list">
             <div>
-                <h2>WEB DESING</h2>
-                <P>popis první věci</P>
-                <a href="#">Learn more</a>
+                <h2>INFORMATION THEORY</h2>
+                <P>In 2021 I won a seminar focusion on Information theory, the encryption and
+                    transmission of data.
+                </P>
+                <a href="https://olinx.inf.upol.cz/vysledky?seminar=19" target="_blank">Learn more</a>
             </div>
             <div>
-                <h2>dva DESING</h2>
-                <P>popis druhý věci</P>
-                <a href="#">Learn more</a>
+                <h2>WEB DESIGN</h2>
+                <P>I also completed (2022) a course focusing on web development, with the very basics
+                    of css, html, and js.
+                </P>
+                <a href="https://olinx.inf.upol.cz/vysledky?seminar=25  target="_blank"">Learn more</a>
             </div>
             <div>
                 
-                <h2>třu DESING</h2>
-                <P>popis deuhý+ věci</P>
-                <a href="#">Learn more</a>
+                <h2>SQL</h2>
+                <P>I am currently enrolled in a SQL course under LeetCode.</P>
+                <a href="#">Stay tuned</a>
             </div>
         </div>
     </div>
@@ -168,7 +167,7 @@
                         <img src="images/github-mark-white.png" alt="gITHUB Icon">
                       </a>
                 </div>
-                <a href="your-cv-link.pdf" download>
+                <a href="CV english.pdf" download>
                     <button class="button-59" role="button">Download CV</button>
                   </a>
 
@@ -179,7 +178,6 @@
                     <input type="text" name="Email" placeholder="Your Email">
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                     <button type="submit" class="button-59" role="button">Submit</button>
-
                 </form>
 
             </div>
@@ -217,18 +215,6 @@
     document.getElementById(tabname).classList.add("active-tab");
 }
 </script>
-
-<script>
-    const scriptURL = '<SCRIPT URL>'
-    const form = document.forms['submit-to-google-sheet']
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
 
 </body>
 </html>
