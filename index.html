@@ -21,12 +21,11 @@
             
             <ul>
                 <li>
-                    <a href="#">Home</a>
-                    <a href="#">About me</a>
-                    <a href="#">Education</a>
-                    <a href="#">Experience</a>
-                    <a href="#">Projects</a>
-                    <a href="#">Contact me</a>
+                    <a href="#header">Home</a>
+                    <a href="#about">About me</a>
+                    <a href="#certificates">My certificates</a>
+                 <!--    <a href="#">Projects</a> -->
+                    <a href="#contact">Contact me</a>
                 </li>
             </ul>
             </nav>
@@ -92,9 +91,9 @@
     </div>
 
 <!--          s e r v i c e s <projects?>      -->
-<div id="services">
+<div id="certificates">
     <div class="container">
-        <h1 class="sub-title">My services</h1>
+        <h1 class="sub-title">My certificates</h1>
         <div class="services-list">
             <div>
                 <h2>WEB DESING</h2>
@@ -117,8 +116,89 @@
 </div>
 
 
+<!--    PROJECTS - TODO AŽ NĚCO BUDU CHTÍT      
 
-<i> Copyright (c) 2024 Jan Jaronek </i>
+<div class="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.png" alt="">
+                <div class="layer">
+                    <h3>Projekt1</h3>
+                    <p>Description ancd adjo honza honza</p>
+                    <a href="#">&#128279</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.png" alt="">
+                <div class="layer">
+                    <h3>Projekt2</h3>
+                    <p>JÁ nevim tyjo nějaká druhá věc co ti mám říct</p>
+                    <a href="#">&#128279</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3.png" alt="">
+                <div class="layer">
+                    <h3>Projekt1</h3>
+                    <p>Description ancd adjo honza honza</p>
+                    <a href="#">&#128279</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+-->
+
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>Jan Jaroněk</p>
+                <p>jaronekjan@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/jan-jaron%C4%9Bk-6834a4270/" target="_blank" title="LinkedIn Profile">
+                        <img src="images/LI-Logo.png" alt="LinkedIn Icon">
+                      </a>
+                      <a href="https://github.com/JJaronek" target="_blank" title="LinkedIn Profile">
+                        <img src="images/github-mark-white.png" alt="gITHUB Icon">
+                      </a>
+                </div>
+                <a href="your-cv-link.pdf" download>
+                    <button class="button-59" role="button">Download CV</button>
+                  </a>
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email">
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="button-59" role="button">Submit</button>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<footer>
+    <small><i> Copyright (c) 2024 Jan Jaronek </i></small>
+</footer>
+
+
+
 
 
 <script>
@@ -138,8 +218,17 @@
 }
 </script>
 
+<script>
+    const scriptURL = '<SCRIPT URL>'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 
-<!-- custom js file link  -->
-<script src="js/script.js"></script>
 </body>
 </html>
